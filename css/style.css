@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    width: 320px;
+    height: 100%;
+}
+.stopwatch {
+    position: relative;
+    width: 100%;
+    height: calc(320px - 40px);
+    border: 2px solid #333;
+    border-radius: 90%;
+    margin: 15px 0;
+}
+
+.stopwatch__arrow {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: #000;
+    top: 10px;
+    left: 50%;
+    margin-left: -1px;
+
+    transform-origin: 50% calc(100% - 10px);
+}
+
+.stopwatch__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+    transform: translate(-50%, -50%);
+}
+
+.stopwatch__btns {
+    width: 100%;
+    position: relative;
+}
+
+.stopwatch__btn {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 90%;
+    outline: 0;
+}
+
+.stopwatch__btn_hide {
+    display: none;
+}
+
+.stopwatch__btn_start {
+    top: -30px;
+    right: -30px;
+
+    color: #57c7d4;
+    border: 2px solid #57c7d4;
+}
+
+.stopwatch__btn_start:hover {
+    background-color: #57c7d4;
+    color: #ffffff;
+}
+
+.stopwatch__btn_stop {
+    top: -30px;
+    left: -30px;
+
+    color: #76838f;
+    border: 2px solid #76838f;
+}
+
+.stopwatch__btn_stop:hover {
+    background-color: #76838f;
+    color: #ffffff;
+}
+
+.stopwatch__btn_pause {
+    top: -30px;
+    right: -30px;
+
+    color: #f96868;
+    border: 2px solid #f96868;
+}
+
+.stopwatch__btn_pause:hover {
+    background-color: #f96868;
+    color: #ffffff;
+}
